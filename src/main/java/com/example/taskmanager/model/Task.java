@@ -1,9 +1,11 @@
 package com.example.taskmanager.model;
 
+import com.example.taskmanager.enums.Priority;
 import com.example.taskmanager.enums.TaskStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
@@ -23,6 +25,11 @@ public class Task {
 
     @Enumerated(EnumType.STRING)
     private TaskStatus status;
+
+    private LocalDateTime createdAt;
+
+    @Enumerated(EnumType.STRING)
+    private Priority priority;
 
 
 }
