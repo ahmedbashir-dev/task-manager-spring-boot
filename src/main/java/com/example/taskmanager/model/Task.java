@@ -9,6 +9,7 @@ import java.util.UUID;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 @Setter
 @Getter
 public class Task {
