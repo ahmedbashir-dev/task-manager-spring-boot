@@ -20,6 +20,7 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public Task save(Task task) {
+
         if(task.getStatus() == null){
             task.setStatus(TaskStatus.PENDING);
         }
